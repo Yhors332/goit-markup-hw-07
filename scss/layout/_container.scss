@@ -151,28 +151,25 @@
     @media screen and(min-width: 768px) {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-
-        
-    }
-
-    .address {
-        @media screen and(min-width: 768px) {
-            width: 33.333%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin: 0 0 60px 0;
-        }
+        flex-direction: column;    
     }
 
     .block {
         @media screen and(min-width: 768px) {
-            width: 100%;
+                width: 100%;
+                display: flex;
+                gap: 165px;
+            }
+    }
+
+    .address {
+        @media screen and(min-width: 768px) {
             display: flex;
             flex-direction: column;
             text-align: center;
         }
+    }
+
     }
 
     .address__logo {
@@ -229,14 +226,15 @@
 
         .feature {
             @media screen and (max-width: 767px) {
-                    width: 33.333%;
+                    width: 100%;
                     text-align: center;
                     margin: 60px 0;
                 }
 
             @media screen and(min-width: 768px) {
                 width: 100%;
-                margin: 0;
+                text-align: center;
+                
             }
             
             margin: 12px 93px 0 70px;
@@ -309,6 +307,11 @@
         }
 
         @media screen and(min-width: 768px) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: 60px 0 0 0;
             
         }
         
@@ -320,7 +323,9 @@
             text-transform: uppercase;
         
             color: var(--white-color);
-        
+            @media screen and(min-width: 768px) {
+                margin-bottom: 20px;
+            }
         }
 
         
@@ -355,6 +360,18 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            @media screen and(min-width: 768px) {
+                display: flex;
+                gap: 12px;
+                margin: 0;
+                flex-wrap: wrap;
+                width: 50%;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                
+        }
         }
         
         &__btn {
@@ -368,8 +385,8 @@
         
             fill: var(--white-color);
         }
-        }
 }
+
 
 .header-portfolio__container {
     width: 1200px;
