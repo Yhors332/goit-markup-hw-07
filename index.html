@@ -15,14 +15,19 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <a href="./index.html" target="_parent" class="header__logo"><span class="logo">Web</span>Studio</a>
             <div class="menu">
                 <nav class="menu__nav">
-                    <a href="./index.html" target="_parent" class="menu__logo"><span class="logo">Web</span>Studio</a>
                     <ul class="menu__site-nav list">
                         <li class="menu__item "><a href="index.html" class="current menu__link">Студія</a></li>
                         <li class="menu__item "><a href="portfolio.html" class="menu__link">Портфоліо</a></li>
                         <li class="menu__item "><a href="#" class="menu__link">Контакти</a></li>
                     </ul>
+                        <button type="button" class="menu__btn js-open-menu">
+                            <svg width="40" height="40">
+                                <use href="./img/icons.svg#icon-menu"></use>
+                            </svg>
+                        </button>
                 </nav>
             </div>
             <div class="auth-nav">
@@ -163,7 +168,7 @@
                     <h2 class="teem__title">Наша команда</h2>
                     <ul class="teem__page list">
                         <li class="teem__item">
-                            <img src="./img/face_1.jpeg" alt="Фото-продукт-дизайнера" width="270" height="260">
+                            <img src="./img/face_1.jpeg" alt="Фото-продукт-дизайнера" width="270" height="260" class="teem__img">
                             <div class="teem__profil">
                                 <h3 class="teem__name">Ігор Дем'яненко</h3>
                                 <p class="teem__profession">Product Designer</p>
@@ -202,7 +207,7 @@
                             </div>
                         </li>
                         <li class="teem__item">
-                            <img src="./img/face_2.jpeg" alt="Фото-фронтендера" width="270" height="260">
+                            <img src="./img/face_2.jpeg" alt="Фото-фронтендера" width="270" height="260" class="teem__img">
                             <div class="teem__profil">
                                 <h3 class="teem__name">Ольга Рєпіна</h3>
                                 <p class="teem__profession">Frontend Developer</p>
@@ -241,7 +246,7 @@
                             </div>
                         </li>
                         <li class="teem__item">
-                            <img src="./img/face_3.jpeg" alt="Фото-торговця" width="270" height="260">
+                            <img src="./img/face_3.jpeg" alt="Фото-торговця" width="270" height="260" class="teem__img">
                             <div class="teem__profil">
                                 <h3 class="teem__name">Микола Тарасов</h3>
                                 <p class="teem__profession">Marketing</p>
@@ -280,7 +285,7 @@
                             </div>
                         </li>
                         <li class="teem__item">
-                            <img src="./img/face_4.jpeg" alt="Фото-юай-дизайнера" width="270" height="260">
+                            <img src="./img/face_4.jpeg" alt="Фото-юай-дизайнера" width="270" height="260" class="teem__img">
                             <div class="teem__profil">
                                 <h3 class="teem__name">Михайло Єрмаков</h3>
                                 <p class="teem__profession">UI Designer</p>
@@ -408,61 +413,91 @@
                     </ul>
                 </address>
             </div>
-            <div class="feature">
-                <p class="feature__text">ПРИЄДНУЙТЕСЬ</p>
-                <ul class="feature__container list">
-                    <div class="feature__card">
-                        <li class="feature__link">
-                            <a href="#" class="feature__item">
-                                <svg width="20" height="20">
-                                    <use href="./img/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
+                <div class="block">
+                    <div class="feature">
+                        <p class="feature__text">ПРИЄДНУЙТЕСЬ</p>
+                        <ul class="feature__container list">
+                            <div class="feature__card">
+                                <li class="feature__link">
+                                    <a href="#" class="feature__item">
+                                        <svg width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="feature__card">
+                                <li class="feature__link">
+                                    <a href="#" class="feature__item">
+                                        <svg width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="feature__card">
+                                <li class="feature__link">
+                                    <a href="#" class="feature__item">
+                                        <svg width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="feature__card">
+                                <li class="feature__link">
+                                    <a href="#" class="feature__item">
+                                        <svg width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
-                    <div class="feature__card">
-                        <li class="feature__link">
-                            <a href="#" class="feature__item">
-                                <svg width="20" height="20">
-                                    <use href="./img/icons.svg#icon-twitter"></use>
+                    <div class="form-footer">
+                        <label class="form-footer__label" for="email">Підпишіться на розсилку</label>
+                        <div class="form-footer__link">
+                            <input type="email" name="email" id="email" placeholder="E-mail" class="form-footer__input" required />
+                            <button type="submit" class="form-footer__btn button">Підписатися
+                                <svg class="form-footer__icon" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-telegram"></use>
                                 </svg>
-                            </a>
-                        </li>
+                            </button>
+                        </div>
                     </div>
-                    <div class="feature__card">
-                        <li class="feature__link">
-                            <a href="#" class="feature__item">
-                                <svg width="20" height="20">
-                                    <use href="./img/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </div>
-                    <div class="feature__card">
-                        <li class="feature__link">
-                            <a href="#" class="feature__item">
-                                <svg width="20" height="20">
-                                    <use href="./img/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="form-footer">
-                <label class="form-footer__label" for="email">Підпишіться на розсилку</label>
-                <div class="form-footer__link">
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="form-footer__input"
-                        required />
-                    <button type="submit" class="form-footer__btn button">Підписатися
-                        <svg class="form-footer__icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-telegram"></use>
-                        </svg>
-                    </button>
                 </div>
             </div>
-        </div>
     </footer>
+
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+            <button type="button" class="mobile-menu__btn-close js-close-menu ">
+                <svg width="40" height="40">
+                    <use href="./img/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Студія</a></li>
+                    <li class="mobile-menu__item interval"><a href="#" class="mobile-menu__link">Портфоліо</a></li>
+                    <li class="mobile-menu__item "><a href="#" class="mobile-menu__link ">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item interval">
+                        <a href="tel:+" class="contact__tel">+380961111111</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:" class="contact__mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -519,6 +554,7 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 
