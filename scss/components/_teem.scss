@@ -16,6 +16,7 @@
                 margin-bottom: 30px;
                 margin-top: 0;
             }
+
         }
 
         &__page {
@@ -31,19 +32,29 @@
                 flex-wrap: wrap;
                 gap: 30px;
             }
+            @media screen and (min-width: 1200px) {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+            }
             
         }
 
         &__img {
-            @media screen and(max-width: 767px) {
-                min-width: 100%;
-                min-height: 460px;
-                display: block;
-            }
+        @media screen and(max-width: 767px) {
+            min-width: 100%;
+            min-height: 460px;
+            display: block;
+        }
         @media screen and(min-width: 768px) {
-                min-width: 354px;
+            min-width: 354px;
+            display: block;
         }
+        @media screen and (min-width: 1200px) {
+            min-width: 100%;
+            display: block;
         }
+    }
 
         &__item {
             background-color: var(--white-color);

@@ -14,7 +14,6 @@
                 font-size: 28px;
                 line-height: 1.18;
             }
-
         }
 
         &__list {
@@ -28,6 +27,10 @@
             
             @media screen and(min-width: 768px) {
                 flex-wrap: wrap;
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-wrap: nowrap;
             }
         }
 
@@ -44,6 +47,11 @@
             @media screen and(min-width: 768px) {
                 flex-basis: 33.333%;
                 min-width: 226px;
+            }
+
+            @media screen and(min-width: 1200px) {
+                flex-basis: 100%;
+                min-width: 100%;
             }
         }
         
