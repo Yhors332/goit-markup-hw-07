@@ -18,6 +18,7 @@
         width: 100%;
     }
 
+
 }
 
 .hero__container {
@@ -465,9 +466,29 @@
     margin-right: auto;
     padding: 0 15px;
     /* outline: 3px solid tomato; */
+    @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    }
+    
+    @media screen and (min-width:768px){
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
 
     .img-portfolio {
         display: block;
+        @media screen and (max-width: 767px) {
+            min-width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            min-width: 100%;
+        }
     }
 }
 

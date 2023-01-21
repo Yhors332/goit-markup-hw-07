@@ -17,13 +17,13 @@
 
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container border">
             <a href="./index.html" target="_parent" class="header__logo"><span class="logo">Web</span>Studio</a>
             <div class="menu">
                 <nav class="menu__nav">
                     <ul class="menu__site-nav list">
-                        <li class="menu__item "><a href="index.html" class="current menu__link">Студія</a></li>
-                        <li class="menu__item "><a href="portfolio.html" class="menu__link">Портфоліо</a></li>
+                        <li class="menu__item "><a href="index.html" class=" menu__link">Студія</a></li>
+                        <li class="menu__item "><a href="portfolio.html" class="current menu__link">Портфоліо</a></li>
                         <li class="menu__item "><a href="#" class="menu__link">Контакти</a></li>
                     </ul>
                     <button type="button" class="menu__btn js-open-menu">
@@ -80,7 +80,7 @@
                     <div class="portfolio-card">
                         <ul class="portfolio-card__item list">
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -98,7 +98,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio1.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -116,7 +116,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio2.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -134,7 +134,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio3.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -152,7 +152,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img--portfolio4.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -169,7 +169,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio5.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -186,7 +186,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img-portfolio6.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -203,7 +203,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img--portfolio7.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -221,7 +221,7 @@
                                 </a>
                             </li>
                             <li class="portfolio-card__list">
-                                <a href="/">
+                                <a href="#">
                                     <div class="portfolio-card__thumb">
                                         <img src="./img/img--portfolio8.jpg" alt="Ноутбук на котрому на сайт" width="370" height="294"
                                             class="img-portfolio">
@@ -320,6 +320,38 @@
             </div>
         </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+            <button type="button" class="mobile-menu__btn-close js-close-menu ">
+                <svg width="40" height="40">
+                    <use href="./img/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Студія</a></li>
+                    <li class="mobile-menu__item interval"><a href="portfolio.html" class="mobile-menu__link">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__item "><a href="#" class="mobile-menu__link ">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item interval">
+                        <a href="tel:+" class="contact__tel">+380961111111</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:" class="contact__mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

@@ -3,7 +3,13 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
-
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+            margin: 40px 0 0 0;
+        }
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+        }
     }
 
     &__list {
@@ -12,6 +18,17 @@
         /* outline: 3px solid tomato; */
         flex-basis: calc((100% - 60px)/ 9);
         max-width: 370px;
+        @media screen and (max-width: 767px) {
+            min-width: 450px;
+        }
+
+        @media screen and (min-width:768px) {
+            min-width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            min-width: 370px;
+        }
 
     }
 

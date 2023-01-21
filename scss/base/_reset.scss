@@ -5,5 +5,10 @@
 }
 
 .interval {
-    margin: 0 0 32px;
+    margin: 35px 0 32px 0;
+}
+
+.border {
+    border: 1px solid var(--background-primary-color);
+    background-color: var(--white-color);
 }

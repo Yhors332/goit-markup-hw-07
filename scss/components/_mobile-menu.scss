@@ -29,6 +29,12 @@
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+    color: var(--accent-color)
 }
 
 .mobile-menu__contact {
@@ -36,7 +42,7 @@
 }
 
 .contact__item {
-    
+    margin-top: 0;
 }
 
 .contact__tel {
@@ -60,4 +66,31 @@
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
+}
+
+.media {
+    margin-top: 64px;
+}
+
+.media__list {
+    display: flex;
+    
+}
+
+
+.media__link {
+    color: var(--accent-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+}
+
+.media_border {
+    color:rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
 }
